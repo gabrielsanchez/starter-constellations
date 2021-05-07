@@ -16,7 +16,7 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/client/.*", "dest": "/index.html" }
+    { "src": "/client/.*", "dest": "/index.html" },
     { "src": "/server/.*", "dest": "/constellations.json" }
   ]
 }
