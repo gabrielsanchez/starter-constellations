@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "scope": "my_own_vercel_scope",
+  "github": {
+    "enabled": false
+  },
+  "builds": [
+    {
+      "src": "/server",
+      "use": "@now/node"
+    },
+    {
+      "src": "/client/*",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/client/.*", "dest": "/index.html" }
+    { "src": "/server/.*", "dest": "/constellations.json" }
+  ]
+}
